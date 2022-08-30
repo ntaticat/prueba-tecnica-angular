@@ -27,8 +27,8 @@
                 </div>
                 <div class="hotel-filter-container">
                   <label class="filters-label" for="">Categoria <fa-icon [icon]="faIcons.faBriefcase"></fa-icon></label>
-                  <ng-select class="form-control form-control-sm p-0" [(ngModel)]="selectedCar">
-                    <ng-option *ngFor="let car of cars" [value]="car.id">{{car.name}}</ng-option>
+                  <ng-select class="form-control form-control-sm p-0" [(ngModel)]="selectedCategory">
+                    <ng-option *ngFor="let category of categoriesList" [value]="category.id_categoria">{{category.nombre_categoria}}</ng-option>
                   </ng-select>
                 </div>
                 <div class="hotel-filter-container">
