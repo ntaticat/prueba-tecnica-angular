@@ -1,15 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable, tap } from 'rxjs';
-
-export interface ICategoriesResult {
-  Categorias: ICategory[];
-}
-
-export interface ICategory {
-  id_categoria: string,
-  nombre_categoria: string
-}
+import { ICategoriesResult, ICategory } from '../interfaces/categories.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -23,8 +15,7 @@ export class CategoriesService {
   getCategories(): Observable<ICategory[]> {
     return this.http.get<ICategoriesResult>(this.url)
       .pipe(
-        map((categoriesResult) => categoriesResult.Categorias),
-        tap((categoriesResult) => console.log(categoriesResult)),
+        map((categoriesResult) => categoriesResult.Categorias)
       );
   }
 }

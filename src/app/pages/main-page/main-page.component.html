@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <app-header></app-header>
+
+  <div class="row mb-3">
+    <div class="col px-md-0">
+      <div class="container">
+        <div class="row mb-3 pb-3 border-bottom border-2 border-success border-opacity-75">
+          <div class="col-12 col-lg-10">
+            <app-hotel-filters></app-hotel-filters>
+          </div>
+        </div>
+        <div class="row gy-3">
+          <div class="col-12 col-md-4 col-lg-3" *ngFor="let hotelItem of [1, 1, 1, 1, 1]">
+            <app-hotel-item></app-hotel-item>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

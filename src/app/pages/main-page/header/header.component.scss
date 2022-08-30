@@ -1,0 +1,17 @@
+.hotel-logo {
+  width: 6em;
+  height: 6em;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+  padding: 0.5em;
+  background: rgba(var(--bs-success-rgb),var(--bs-bg-opacity))!important;;
+}
+
+.hotel-navigation-link {
+  color: white;
+
+  &:hover {
+    color: rgb(211, 211, 211);
+  }
+}

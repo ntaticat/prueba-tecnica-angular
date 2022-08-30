@@ -1,0 +1,75 @@
+$breakpoint-phone: 576px;
+$breakpoint-tablet: 768px;
+
+.hotel-filters {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-wrap: wrap;
+  }
+}
+
+.hotel-filters-container {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media (max-width: $breakpoint-tablet) {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.hotel-filter-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: 0.5em;
+  align-items: center;
+
+  & label {
+    margin-right: 0.5em;
+  }
+
+  @media (max-width: $breakpoint-phone) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    margin-bottom: 1em;
+  }
+}
+
+.mexico-icon {
+  height: 1.1em;
+}
+
+.filters-label {
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.button-search-container {
+
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  @media (max-width: $breakpoint-phone) {
+    & > button {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $breakpoint-phone) and (max-width: $breakpoint-tablet) {
+    & > button {
+      width: 50%;
+    }
+  }
+}
