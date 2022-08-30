@@ -1,0 +1,58 @@
+.hotel-logo {
+  width: 6em;
+  height: 6em;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+  padding: 0.5em;
+  background: rgba(var(--bs-success-rgb),var(--bs-bg-opacity))!important;;
+}
+
+.mexico-icon {
+  height: 1.1em;
+}
+
+.hotel-card {
+  border-radius: 0 2em 2em 2em;
+  overflow: hidden;
+}
+
+.filters-label {
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.hotel-filters {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.hotel-filters-container {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hotel-filter-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: 0.5em;
+  align-items: center;
+
+  & label {
+    margin-right: 0.5em;
+  }
+}
+
+.hotel-navigation-link {
+  color: white;
+
+  &:hover {
+    color: rgb(211, 211, 211);
+  }
+}
